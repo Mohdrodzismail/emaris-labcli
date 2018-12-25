@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class AuthService {
     constructor(private http:HttpClient){}
-    debugger
+    //debugger;
     public register(userData: any): Observable<any> {
-        return this.http.post('api/v1/user/register', userData)
+        return this.http.post('api/v1/users/register', userData)
     }
 } 

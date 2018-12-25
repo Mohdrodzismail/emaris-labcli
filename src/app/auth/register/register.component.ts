@@ -22,12 +22,14 @@ export class RegisterComponent implements OnInit {
   }
 
   register(){
+    //debugger;
     this.auth.register(this.formData).subscribe(
       () => {
         //console.log('Successfully Registered');
         this.router.navigate(['/login',{register:'Success'}]);
       },
       (errorResponse) => {
+        debugger;
         this.errors = errorResponse.error.errors;
       }
     )   

@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use('/api/v1/SmpRegistration', smpRegistrationRouter);
-app.use('/api/v1/User', UserRouter);
+app.use('/api/v1/Users', UserRouter);
 
 const PORT = process.env.PORT || 3001;
 
