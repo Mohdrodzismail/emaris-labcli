@@ -7,7 +7,7 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "eMaR",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -26,10 +26,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
-            "scripts": []
+
+            "styles": [
+              "./node_modules/bootstrap/scss/bootstrap.scss",
+              "./src/styles.scss"
+            ]
           },
           "configurations": {
             "production": {
